@@ -110,20 +110,20 @@ li:hover {
 /* ESTÁ SECÇÃO É A SEÇÃO SOBRE */
 
 .about-container {
-  margin: 2rem 2rem;
+  margin: 2rem;
 }
 .description-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  text-transform: uppercase;
 }
 .description-container h1 {
   font-family: "sansation";
   font-weight: 500;
   border-bottom: 3px solid #ff5516;
   font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 .description-container p {
   width: 80%;
@@ -132,10 +132,7 @@ li:hover {
   font-family: "lato";
   color: grey;
 }
-#img-midle {
-  width: 70%;
-  margin-top: -20%;
-}
+
 .about-habilityes-container {
   display: flex;
   justify-content: center;
@@ -161,6 +158,10 @@ li:hover {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.3rem;
+}
+#img-midle {
+  width: 70%;
+  margin-top: -20%;
 }
 .about-icon {
   width: 50px;
@@ -309,6 +310,9 @@ li:hover {
   padding-bottom: 2rem;
   margin: 0 2rem;
 }
+.footer-icons p {
+  text-align: center;
+}
 .footer-icons img {
   width: 40px;
 }
@@ -320,4 +324,77 @@ li:hover {
   align-items: center;
   color: white;
   font-family: "lato";
+}
+.footer-direitos p {
+  margin: 0 2rem;
+}
+
+@media (max-width: 720px) {
+  .intro-container {
+    height: 600px;
+  }
+  .logo {
+    width: 150px;
+  }
+  .menu {
+    justify-content: space-between;
+  }
+  ul {
+    display: none;
+  }
+  .intro {
+    gap: 2rem;
+  }
+  .intro h1 {
+    text-align: start;
+    font-size: 2.8rem;
+  }
+  .intro h2 {
+    display: none;
+  }
+  .button-2 {
+    display: none;
+  }
+
+  /* SOBRE */
+  .description-container p {
+    width: 100%;
+  }
+  .about-habilityes-container {
+    gap: 10rem;
+  }
+  #img-midle,
+  .about-img {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* SERVICES */
+  .service-bg {
+    height: 400px;
+  }
+  .services-container {
+    margin-top: 5rem;
+  }
+  .service-bg h1 {
+    width: 90%;
+  }
+  #servico {
+    margin: 0 2rem;
+  }
+  #servico h1 {
+    text-align: center;
+  }
+  /* CONTATO */
+  .contato-bg {
+    height: 500px;
+  }
+  .contato-bg h1 {
+    font-size: 1.5rem;
+  }
+  .contato-bg h2 {
+    font-size: 1.2rem;
+  }
+  .contact-img-content img {
+    width: 50px;
+  }
 }
