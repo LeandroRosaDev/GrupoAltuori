@@ -135,16 +135,16 @@ li:hover {
 
 .about-habilityes-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 4rem;
-  gap: 14rem;
+  margin-top: 10rem;
+  gap: 4rem;
 }
 .about-habilityes-container-items {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   flex-direction: column;
 }
 .about-habilityes-container-items p {
@@ -223,6 +223,9 @@ li:hover {
   height: auto;
   border-radius: 4px;
 }
+#mobile-img {
+  display: none;
+}
 .service-overlay {
   position: absolute;
   bottom: 100%;
@@ -275,6 +278,7 @@ li:hover {
 }
 .contato-description {
   margin: 0 2rem;
+  text-align: center;
 }
 .contact-img-content {
   display: flex;
@@ -318,12 +322,14 @@ li:hover {
 }
 .footer-direitos {
   background-color: #222222;
-  height: 150px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-family: "lato";
+  flex-direction: column;
+  text-align: center;
 }
 .footer-direitos p {
   margin: 0 2rem;
@@ -346,7 +352,7 @@ li:hover {
     gap: 2rem;
   }
   .intro h1 {
-    text-align: start;
+    text-align: center;
     font-size: 2.8rem;
   }
   .intro h2 {
@@ -361,7 +367,7 @@ li:hover {
     width: 100%;
   }
   .about-habilityes-container {
-    gap: 10rem;
+    flex-wrap: wrap;
   }
   #img-midle,
   .about-img {
@@ -396,5 +402,23 @@ li:hover {
   }
   .contact-img-content img {
     width: 50px;
+  }
+}
+@media (max-width: 450px) {
+  .intro h1 {
+    text-align: center;
+    font-size: 2.4rem;
+  }
+  .button-1 {
+    padding: 15px 35px;
+  }
+  .footer-direitos p {
+    font-size: 0.6rem;
+  }
+  #mobile-img {
+    display: block;
+  }
+  #desktop-img {
+    display: none;
   }
 }
