@@ -14,6 +14,7 @@
   text-decoration: none;
   box-sizing: border-box;
   font-family: "lato";
+  transition: all 0.4s;
 }
 a {
   color: white;
@@ -21,9 +22,14 @@ a {
 span {
   color: #ff5516;
 }
+.menuSeta,
+.menuFechar,
+.menuResponsivo {
+  display: none;
+}
 .intro-container {
   height: 1000px;
-  background-image: url("./img/bg-home2.png");
+  background-image: url("./img/bg-home2.jpg");
   background-size: cover;
 }
 .logo {
@@ -35,19 +41,19 @@ span {
   justify-content: space-around;
   align-items: center;
 }
-ul {
+.menu-desktop {
   display: flex;
   gap: 2rem;
   padding: 2rem;
   flex-wrap: wrap;
   font-size: 1rem;
 }
-li {
+.menu-desktop li {
   color: white;
   font-family: "lato";
   font-weight: 500;
 }
-li:hover {
+.menu-desktop li:hover {
   transition: 0.4s;
   color: #ff5516;
 }
@@ -96,15 +102,10 @@ li:hover {
   cursor: pointer;
   text-transform: uppercase;
 }
-.button-1:hover {
-  transition: 0.4s;
-  background-color: #ff5516;
-  border: 1px solid #ff5516;
-}
+.button-1:hover,
 .button-2:hover {
   transition: 0.4s;
-  border: 1px solid white;
-  background-color: transparent;
+  transform: scale(105%);
 }
 
 /* ESTÁ SECÇÃO É A SEÇÃO SOBRE */
@@ -192,7 +193,7 @@ li:hover {
   margin-bottom: 2rem;
 }
 .service-bg {
-  background-image: url("./img/bg-service.png");
+  background-image: url("./img/bg-service.jpg");
 }
 .service-bg h1 {
   font-family: "sansation";
@@ -262,7 +263,7 @@ li:hover {
 */
 
 .contato-bg {
-  background-image: url("./img/bg-contato.png");
+  background-image: url("./img/bg-contato.jpg");
   height: 700px;
   color: white;
 }
@@ -319,6 +320,10 @@ li:hover {
 }
 .footer-icons img {
   width: 40px;
+  margin-right: 5px;
+}
+.footer-icons img:hover {
+  transform: scale(110%);
 }
 .footer-direitos {
   background-color: #222222;
@@ -335,6 +340,25 @@ li:hover {
   margin: 0 2rem;
 }
 
+/* BOTÃO DO WHATSAPP  */
+
+.btn-whatsapp {
+  position: fixed;
+  outline: none;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #ff5516;
+  color: #f0f0fa;
+  font-size: 2rem;
+  border: 1px solid #f0f0fa;
+  height: 50px;
+  width: 50px;
+}
+
+/* MENU RESPONSIVO  */
+
 @media (max-width: 720px) {
   .intro-container {
     height: 600px;
@@ -345,7 +369,7 @@ li:hover {
   .menu {
     justify-content: space-between;
   }
-  ul {
+  .menu-desktop {
     display: none;
   }
   .intro {
@@ -405,6 +429,45 @@ li:hover {
   }
 }
 @media (max-width: 450px) {
+  .menuResponsivo {
+    display: block;
+    position: fixed;
+    background-color: #333333;
+    width: 0%;
+    height: 100%;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  .menuResponsivo ul {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 6rem;
+    margin: 10rem;
+    transition: all 0.8s;
+  }
+
+  .menuSeta,
+  .menuFechar {
+    position: absolute;
+    right: 8%;
+    margin-top: 1rem;
+    width: 50px;
+    z-index: 21;
+    transition: all 1s;
+  }
+  .menuSeta {
+    display: block;
+  }
+  .menuFechar {
+    display: none;
+    transition: all 1s;
+  }
   .intro h1 {
     text-align: center;
     font-size: 2.4rem;

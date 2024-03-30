@@ -8,17 +8,45 @@
       content="olsi6revn46t47u84exydwju95yik5"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>Grupo Altuori</title>
   </head>
   <body>
     <section class="intro-container" id="home">
       <header class="menu">
         <img src="./img/logo.png" alt="bg-imagem" class="logo" />
+
+        <!-- MENU RESPONSIVO -->
+        <img
+          class="menuFechar"
+          src="./img/menuFechar.png"
+          alt="X do menu responsivo"
+        />
+        <img
+          class="menuSeta"
+          src="./img/setadireita.png"
+          alt="hamburger do menu responsivo"
+        />
+        <nav class="menuResponsivo">
+          <ul class="menuSidebar">
+            <li><a class="menuLinks" href="#home">HOME</a></li>
+            <li>
+              <a class="menuLinks" href="#sobre">SOBRE</a>
+            </li>
+            <li><a class="menuLinks" href="#servico">SERVIÇOS</a></li>
+            <li><a class="menuLinks" href="#contato">CONTATOS</a></li>
+          </ul>
+        </nav>
+
         <nav>
-          <ul>
+          <ul class="menu-desktop">
             <a href="#home"><li>HOME</li></a>
             <a href="#sobre"> <li>SOBRE</li></a>
-            <a href="#servico"> <li>SERVICO</li></a>
+            <a href="#servico"> <li>SERVIÇO</li></a>
             <a href="#contato"> <li>CONTATO</li></a>
           </ul>
         </nav>
@@ -136,13 +164,13 @@
           <img
             class="service-image"
             id="desktop-img"
-            src="./img/service-1.png"
+            src="./img/service-1.jpg"
             alt="service"
           />
           <img
             class="service-image"
             id="mobile-img"
-            src="./img/service-mobile-1.png"
+            src="./img/service-mobile-1.jpg"
             alt="service-mobile"
           />
           <div class="service-overlay">
@@ -157,13 +185,13 @@
           <img
             class="service-image"
             id="desktop-img"
-            src="./img/service-2.png"
+            src="./img/service-2.jpg"
             alt="service"
           />
           <img
             class="service-image"
             id="mobile-img"
-            src="./img/service-mobile-2.png"
+            src="./img/service-mobile-2.jpg"
             alt="service-mobile"
           />
 
@@ -179,13 +207,13 @@
           <img
             class="service-image"
             id="desktop-img"
-            src="./img/service-3.png"
+            src="./img/service-3.jpg"
             alt="service"
           />
           <img
             class="service-image"
             id="mobile-img"
-            src="./img/service-mobile-3.png"
+            src="./img/service-mobile-3.jpg"
             alt="service-mobile"
           />
 
@@ -201,13 +229,13 @@
           <img
             class="service-image"
             id="desktop-img"
-            src="./img/service-4.png"
+            src="./img/service-4.jpg"
             alt="service"
           />
           <img
             class="service-image"
             id="mobile-img"
-            src="./img/service-mobile-4.png"
+            src="./img/service-mobile-4.jpg"
             alt="service-mobile"
           />
 
@@ -223,13 +251,13 @@
           <img
             class="service-image"
             id="desktop-img"
-            src="./img/service-5.png"
+            src="./img/service-5.jpg"
             alt="service"
           />
           <img
             class="service-image"
             id="mobile-img"
-            src="./img/service-mobile-5.png"
+            src="./img/service-mobile-5.jpg"
             alt="service-mobile"
           />
 
@@ -245,13 +273,13 @@
           <img
             class="service-image"
             id="desktop-img"
-            src="./img/service-6.png"
+            src="./img/service-6.jpg"
             alt="service"
           />
           <img
             class="service-image"
             id="mobile-img"
-            src="./img/service-mobile-6.png"
+            src="./img/service-mobile-6.jpg"
             alt="service-mobile"
           />
 
@@ -267,13 +295,13 @@
           <img
             class="service-image"
             id="desktop-img"
-            src="./img/service-7.png"
+            src="./img/service-7.jpg"
             alt="service"
           />
           <img
             class="service-image"
             id="mobile-img"
-            src="./img/service-mobile-7.png"
+            src="./img/service-mobile-7.jpg"
             alt="service-mobile"
           />
 
@@ -289,13 +317,13 @@
           <img
             class="service-image"
             id="desktop-img"
-            src="./img/service-8.png"
+            src="./img/service-8.jpg"
             alt="service"
           />
           <img
             class="service-image"
             id="mobile-img"
-            src="./img/service-mobile-8.png"
+            src="./img/service-mobile-8.jpg"
             alt="service-mobile"
           />
 
@@ -367,5 +395,14 @@
         <p>54.251.497 BEATRIZ HENRIQUES DIAS</p>
       </div>
     </footer>
+    <button class="btn-whatsapp">
+      <a
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=5521992342810&text=Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20oferecidos%20pelo%20Grupo%20Altuori."
+        ><i class="fa fa-whatsapp"></i
+      ></a>
+    </button>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js"></script>
   </body>
 </html>
